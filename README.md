@@ -3,4 +3,15 @@
 
 ### Architecture du site
 
-[Lien du site](https://maxdep.github.io/MilkyWay/)
+### Team
+
+Anthony :
+- Accueil
+- Contact
+- FAQ
+- Planètes
+
+Benjamin :
+- Nous rejoindre
+- Team 
+- Recrutement 
