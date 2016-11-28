@@ -57,8 +57,9 @@ nav>ul>li>a:hover {
 .background_accueil>h1 {
     position: absolute;
     display: inline;
-    left: 31%;
-    top: 35%;
+    left: 0;
+    width: 100%;
+    top: 38%;
     text-align: center;
     color: white;
     font-weight: bold;
