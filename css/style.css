@@ -102,6 +102,10 @@ footer>p {
     margin: 10px;
 }
 
+main {
+    padding-top: 5em;
+}
+
 @keyframes fade {
     0% {
         opacity: 0.1;
