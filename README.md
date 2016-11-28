@@ -8,10 +8,9 @@
 Anthony :
 - Accueil
 - Contact
-- FAQ
 - Planètes
 
 Benjamin :
-- Nous rejoindre
+- FAQ
 - Team 
 - Recrutement 
