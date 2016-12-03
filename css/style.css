@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /*overflow: hidden;*/
 }
 
 .fond {
@@ -12,11 +11,15 @@ body {
     justify-content: center;
 }
 
-nav {
-    position: fixed;
-    background-color: #333;
+header {
     width: 100%;
+    height: auto;
+    position: fixed;
     z-index: 1;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 ul {
@@ -56,7 +59,6 @@ nav>ul>li>a:hover {
 
 .background_accueil>h1 {
     position: absolute;
-    display: inline;
     left: 0;
     width: 100%;
     top: 38%;
@@ -70,7 +72,6 @@ nav>ul>li>a:hover {
 }
 
 span {
-    /* animation */
     color: gray;
 }
 
@@ -108,39 +109,73 @@ main {
 
 .icon_menu {
     display: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100%;
+}
+
+.nav_responsive {
+    display: none;
 }
 
 @media only screen and (max-width: 800px) {
     .icon_menu {
-        display : inline;
+        display: inline;
     }
-    
-    nav {
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
+    .nav_responsive {
+        display: inline;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111; /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
     }
-    
-    ul > li > a{
+
+    .nav_responsive a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
         color: #818181;
         display: block;
-        transition: 0.3s
+        transition: 0.3s;
+    }
+
+    .nav_responsive a:hover,
+    .offcanvas a:focus {
+        color: #f1f1f1;
+    }
+
+    .nav_responsive .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    nav>ul>li:not(.a_gg) {
+        display: none;
+    }
+    nav>ul>li {
+        width: 100%;
+        text-align: center;
     }
 }
 
 @media screen and (max-height: 450px) {
-    nav {padding-top: 15px;}
-    nav > li > a {font-size: 18px;}
+    .nav_responsive {
+        padding-top: 15px;
+    }
+    .nav_responsive > a {
+        font-size: 18px;
+    }
 }
 
 @keyframes fade {
