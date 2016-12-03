@@ -41,12 +41,12 @@ $ git branch --set-upstream-to=origin/master master
 # Facultatif
 ```
 ### Après avoir fait des modifications sur un ou plusieurs fichiers
-```
+```bash
 $ git add <fichier ou dossier>
 $ git commit -m "<Message>"
 ```
 ### Exportation et Importation
-```
+```bash
 $ git pull
 # Récupère tous
 
