@@ -12,6 +12,14 @@ main {
     padding-top: 5em;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
 /* ===== Style Header ===== */
 header {
     width: 100%;
@@ -22,14 +30,6 @@ header {
 
 nav {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-nav>ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav>ul>li>a {
