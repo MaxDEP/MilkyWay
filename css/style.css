@@ -49,6 +49,20 @@ nav>ul>li {
     align-items: flex-start;
 }
 
+.icon_menu {
+    display: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100%;
+}
+
+.nav_responsive {
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
     .icon_menu {
         display: inline;
@@ -192,20 +206,6 @@ footer>p {
 .txt_explain_system {
     margin-left: 850px;
     margin-right: 250px;
-}
-
-.icon_menu {
-    display: none;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-    width: 100%;
-}
-
-.nav_responsive {
-    display: none;
 }
 
 @keyframes fade {
