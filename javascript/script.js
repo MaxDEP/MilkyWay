@@ -15,16 +15,20 @@ video.addEventListener("timeupdate", function () {
     }
 });
 
-var event = document.addEventListener("click", function () {
-    closeNav();
-});
-event.stopPropagation();
+/*document.addEventListener("mouseup", function (e) {
+    if (!nav.is(e.target) // if the target of the click isn't the container...
+        &&
+        nav.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        closeNav();
+    }
+});*/
+
 function openNav() {
     document.getElementById("nav_responsive").style.width = "250px";
-    //event.
 }
 
 function closeNav() {
     document.getElementById("nav_responsive").style.width = "0";
-    event.stopPropagation();
+
 }
