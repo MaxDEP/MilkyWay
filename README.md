@@ -24,17 +24,32 @@ $ sudo apt-get install git
 $ git init
 # Initialisation du repo Git en local
 
+$ touch readme.md
+# Ajout d'un fichier
+
 $ git add .
-# Ajout du dossier au repo
 
 $ git commit -m "First commit"
-# Premier commit local
 
-$ git remote add origin remote https://github.com/MaxDEP/MilkyWay.git
+$ git remote add origin https://github.com/MaxDEP/MilkyWay.git
 # Ajout du réseau GitHub
 
 $ git remote -v
 # Vérification
 
-$ git push origin master
+$ git branch --set-upstream-to=origin/master master
+# Facultatif
+```
+### Après avoir fait des modifications sur un ou plusieurs fichiers
+```bash
+$ git add <fichier ou dossier>
+$ git commit -m "<Message>"
+```
+### Exportation et Importation
+```bash
+$ git pull
+# Récupère tous
+
+$ git push
+# Envoie tous
 ```
