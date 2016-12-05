@@ -308,8 +308,6 @@ article>ul>li{
     }
 }
 
-<<<<<<< HEAD
-=======
 @media only screen and (max-width: 768px) {
     .icon_menu {
         display: inline;
@@ -375,22 +373,39 @@ article>ul>li{
 
 /*CSS page Equipe______________________________________________*/
 div.equipe {
-    position: relative;
-    height: 1000px;
-    background-color: whitesmoke;
-    width: 100%
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-p.equipe {
-    position: absolute;
-    top: 100px;
-    left: 300px;
+p#pantho {
+    width: 35%;
+}
+
+p#pbenji {
+    width: 35%;
 }
 
 #antho {
-    position: absolute;
-    top: 100px;
-    width: 20%;
-    height: 20%;
-    border-radius: 100%;
+    width: 15%;
+    height: 15%;
+    margin-right: 5%;
+}
+
+#benji {
+    width: 15%;
+    height: 15%;
+    margin-right: 5%;
+}
+
+main.main_equipe {
+    background-color: whitesmoke;
+}
+
+div.equipe>ul.liste_social {
+    width: 5%;
+    height: 5%;
+    flex-direction: row;
 }
