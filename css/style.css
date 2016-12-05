@@ -169,3 +169,25 @@ main {
         opacity: 1;
     }
 }
+
+/*CSS page Equipe______________________________________________*/
+div.equipe {
+    position: relative;
+    height: 1000px;
+    background-color: whitesmoke;
+    width: 100%
+}
+
+p.equipe {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+#antho {
+    position: absolute;
+    top: 100px;
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+}
