@@ -14,6 +14,7 @@ Benjamin :
 - FAQ
 - Team 
 - Recrutement 
+- Presse
 
 ## Ajout de Projet GitHub en local
 
