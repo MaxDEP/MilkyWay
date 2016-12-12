@@ -290,7 +290,8 @@ article>ul>li{
 
 .galerie>.planetes{
     width: 75%;
-    margin-right: 1em;
+    margin-right: 0.8em;
+    margin-left: 1em;
     background-color: aliceblue;
     border-radius: 1em;  
     height: auto;
@@ -303,18 +304,50 @@ article>ul>li{
 
 .galerie>.planetes>ul>li>img {
     width: 100%;
-    height: auto;
+    height: 200px;
+}
+
+.galerie>.planetes>ul>li>img:hover {
+    animation-name: fadeIn;
+    animation-duration: 2.3s;
+}
+
+.planetes>ul>li>p>strong{
+    padding-right: 5px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(1px);
+  }
 }
 
 .galerie>.planetes>ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .galerie>.planetes>ul>li {
-    width: 33.3%;
+    width: 25%;
     padding-left: 2.5em;
     padding-right: 2.5em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.first {
+    order: -999;
 }
 
 /* ===== Style Animations et medias ===== */
@@ -349,6 +382,20 @@ article>ul>li{
 @media only screen and (max-width: 768px) {
     .icon_menu {
         display: inline;
+    }
+    .galerie{
+        flex-direction: column;
+    }
+    .galerie>aside {
+        width: 100%;
+        margin: 0;
+    }
+    .galerie>.planetes {
+        width: 100%;
+        margin: 0;
+    }
+    .galerie>.planetes>ul>li {
+        width: auto;
     }
     .nav_responsive {
         display: inline;
