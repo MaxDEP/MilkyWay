@@ -482,6 +482,7 @@ p#pbenji {
     height: 15%;
     margin-right: 5%;
     margin-left: 15%;
+    border-radius: 100%;
 }
 
 #benji {
@@ -489,6 +490,7 @@ p#pbenji {
     height: 15%;
     margin-right: 5%;
     margin-left: 15%;
+    border-radius: 100%;
 }
 
 main.main_equipe {
