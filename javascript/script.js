@@ -3,7 +3,6 @@
 const video = document.getElementById('video');
 const textVideo = document.getElementById('titre_accueil');
 const nav = document.getElementById('nav_responsive');
-const recherche = document.getElementById('recherche');
 const galerie = document.getElementById('galerie');
 
 if (video != null) {
@@ -28,19 +27,58 @@ function closeNav() {
 
 }
 
-function setFirstImg(alt){
-    
-}
+let find = function () {
+    let recherche, filtre, li, alt, i;
+    recherche = document.getElementById('recherche');
+    filtre = recherche.value.toUpperCase();
+    li = galerie.getElementsByTagName('li');
 
-find = function () {
-    for(let i = 0; i < galerie.children.length; i++){
-        if(galerie.children[i].childNodes[0].alt == recherche.value && galerie.children[i].className != "first"){
-            galerie.children[i].className += "first";
-        }else if(galerie.children[i].className == "first"){
-            galerie.children[i].className = "";
+    for (i = 0; i < li.length; i++) {
+        alt = li[i].childNodes[0].alt;
+        if (alt.toUpperCase().indexOf(filtre) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
         }
     }
-};
+}
 
 recherche.addEventListener('keydown', find, false);
 recherche.addEventListener('keyup', find, false);
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("planetes");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
