@@ -456,7 +456,8 @@ article>ul>li{
     }
 }
 
-/*CSS page Equipe______________________________________________*/
+/*______________________________________________CSS page Equipe______________________________________________*/
+
 div.equipe {
     display: flex;
     width: 100%;
@@ -516,4 +517,38 @@ div.equipe>div>ul.liste_social>li {
     min-width: 20px;
     padding-left: 1%;
     padding-right: 1%;
+}
+
+/*______________________________________________CSS page Presse______________________________________________*/
+
+main.main_presse {
+    background-color: whitesmoke;
+}
+
+div.presse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+main.main_presse>h1 {
+    text-align: center;
+    border: gray solid 2px;
+    border-radius: 50px;
+}
+
+div.presse>h2 {
+    width: 65%;
+    margin-left: 15%;
+    color: black;
+}
+
+div.presse>p {
+    width: 65%;
+    margin-left: 15%;
 }
