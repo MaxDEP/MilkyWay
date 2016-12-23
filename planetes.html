@@ -12,8 +12,7 @@
     <header>
         <nav class="nav_fix">
             <div class="fond">
-                <a href="./index.html"><img src="./media/Logo.png" width="auto"
-                        height="80" alt="Logo"></a>
+                <a href="./index.html"><img src="./media/Logo.png" width="auto" height="80" alt="Logo"></a>
             </div>
             <ul class="liste_menu">
                 <li><a href="./planetes.html">Planètes</a></li>
@@ -36,21 +35,55 @@
         </nav>
     </header>
     <main>
-       <section class="galerie">
-           <aside>
-               <input id="recherche" type="search" placeholder="Rechercher">
-           </aside>
-           <div class="planetes">
-               <ul id="galerie">
-                   <li><img src="media/saturne.jpg" alt="Saturne"><p><strong>Saturne</strong>Une grosse planète.</p></li>
-                   <li><img src="media/uranus.jpg" alt="Uranus"><p><strong>Uranus</strong>Une petite planète.</p></li>
-                   <li><img src="media/mars.jpg" alt="Mars"><p><strong>Mars</strong>Une planète vivable.</p></li>
-                   <li><img src="media/saturne.jpg" alt="Saturne"><p><strong>Saturne</strong>Une grosse planète.</p></li>
-                   <li><img src="media/uranus.jpg" alt="Uranus"><p><strong>Uranus</strong>Une petite planète.</p></li>
-                   <li><img src="media/mars.jpg" alt="Mars"><p><strong>Mars</strong>Une planète vivable.</p></li>
-               </ul>
-           </div>
-       </section>
+        <section class="galerie">
+            <aside>
+                <input id="recherche" type="search" placeholder="Rechercher">
+            </aside>
+            <div class="planetes">
+                <ul id="galerie">
+                    <li><img src="media/saturne.jpg" alt="Saturne" onclick="openModal();currentSlide(1)">
+                        <p><strong>Saturne</strong>Une grosse planète.</p>
+                    </li>
+                    <li><img src="media/uranus.jpg" alt="Uranus">
+                        <p><strong>Uranus</strong>Une petite planète.</p>
+                    </li>
+                    <li><img src="media/mars.jpg" alt="Mars">
+                        <p><strong>Mars</strong>Une planète vivable.</p>
+                    </li>
+                    <li><img src="media/saturne.jpg" alt="Saturne">
+                        <p><strong>Saturne</strong>Une grosse planète.</p>
+                    </li>
+                    <li><img src="media/uranus.jpg" alt="Uranus">
+                        <p><strong>Uranus</strong>Une petite planète.</p>
+                    </li>
+                    <li><img src="media/mars.jpg" alt="Mars">
+                        <p><strong>Mars</strong>Une planète vivable.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="modal-planetes" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-contenu">
+                <div class="planetes">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="media/saturne.jpg" style="width:100%">
+                </div>
+                <div class="planetes">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="media/uranus.jpg" style="width:100%">
+                </div>
+                <div class="planetes">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="media/mars.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <blockquote>“La jeunesse veut l'espace, la vieillesse le temps. ”</blockquote>
