@@ -297,14 +297,49 @@ article>ul>li{
     height: auto;
 }
 
-.galerie>.planetes>ul>li>img {
-    width: 100%;
-    height: 200px;
-    transition: 0.3s;
+.box-img {
+    position: relative;
 }
 
-.galerie>.planetes>ul>li>img:hover {
-    box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.5), 0 7px 40px 0 rgba(0, 0, 0, 0.3);
+.box-img>img {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.looking {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.box-img:hover>img {
+  opacity: 0.5;
+  box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.5), 0 7px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.box-img:hover .looking {
+  opacity: 1;
+}
+
+.looking>img { 
+  padding: 16px 32px;
+  max-width: 70px;
+  opacity: 0.9;
+}
+
+.galerie>.planetes>ul>li {
+    width: 25%;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 .planetes>ul>li>p>strong{
@@ -315,14 +350,6 @@ article>ul>li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.galerie>.planetes>ul>li {
-    width: 25%;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
 }
 
 .row > .column {
