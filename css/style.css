@@ -151,30 +151,25 @@ footer>p {
 .presentation {
     display: flex;
     width: 100%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    overflow: auto;
+    margin: 15px 0 15px 0;
+    align-items: center;
 }
 
 .img_explain_system {
-    width: 70%;
-    min-width: 20%;
-    flex-shrink: 2/3;
-    flex-grow: 3;
+    margin-left: 5px;
+    max-width: 60%;
+    flex-grow: 1;
 }
 
 .img_explain_system>img {
-    width: 80%;
-    height: auto;
-    border-radius: 100%;
-    display: block;
+    width: 100%;
+    border-radius: 65px;
 }
 
 .txt_explain_system {
-    flex-grow: 1;
-    flex-shrink: 3;
-    min-width: 15%;
-    width: 30%;
+    margin-left: 2%;
+    margin-right: 5px;
+    flex-grow: 2;
 }
 
 
