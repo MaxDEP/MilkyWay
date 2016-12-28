@@ -31,17 +31,17 @@ function closeNav() {
 
 /* Gestion barre de recherche galerie */
 const galerie = document.getElementById('galerie');
-
+const recherche = document.getElementById('recherche');
 
 
 let find = function () {
-    let recherche, filtre, li, alt, i;
-    recherche = document.getElementById('recherche');
+    let filtre, boxs, alt, i, li;
     filtre = recherche.value.toUpperCase();
     li = galerie.getElementsByTagName('li');
+    boxs = galerie.getElementsByClassName('box-img');
 
-    for (i = 0; i < li.length; i++) {
-        alt = li[i].childNodes[0].alt;
+    for (i = 0; i < boxs.length; i++) {
+        alt = boxs[i].childNodes[1].alt;
         if (alt.toUpperCase().indexOf(filtre) > -1) {
             li[i].style.display = "";
         } else {
