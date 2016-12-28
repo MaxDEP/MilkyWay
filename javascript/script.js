@@ -50,27 +50,7 @@ let find = function () {
     }
 }
 
-recherche.addEventListener('keydown', find, false);
-recherche.addEventListener('keyup', find, false);
-
-/* Gestion ouverture popup galerie */
-let popup = document.getElementById('popup');
-let planetes = galerie.getElementsByClassName("planetes");
-
-planetes.forEach(function(planete) {
-    planete.addEventListener('onclick', openModal());
-});
-
-function openModal() {
-  popup.style.display = "block";
-}
-
-function closeModal() {
-  popup.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = "none";
-    }
+if(recherche != null){
+    recherche.addEventListener('keydown', find, false);
+    recherche.addEventListener('keyup', find, false);
 }
