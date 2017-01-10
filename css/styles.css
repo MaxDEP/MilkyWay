@@ -10,8 +10,20 @@ span {
     color: gray;
 }
 
+input, textarea, select {
+    margin: 0 0 1em 0;
+    font-family: 'Roboto';
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid darkblue;
+    font-size: 20px;;
+}
+
 main {
-    padding-top: 8.4em;
+    padding-top: 133px;
     margin: auto;
 }
 
@@ -95,15 +107,14 @@ blockquote {
     color: gray;
 }
 
-footer>p {
-    width: 100%;
+footer small {
+    display: block;
     text-align: center;
-    margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     color: lightgrey;
 }
 
-.social>ul>li {
+.social>ul>li { /* Mauvais */
     margin: 10px;
 }
 
@@ -157,122 +168,15 @@ footer>p {
 
 .img_explain_system {
     margin-left: 5px;
-    max-width: 60%;
-    flex-grow: 1;
-}
-
-.img_explain_system>img {
-    width: 100%;
+    max-width: 55%;
+    flex: 1;
     border-radius: 65px;
 }
 
 .txt_explain_system {
     margin-left: 2%;
     margin-right: 5px;
-    flex-grow: 2;
-}
-
-
-/* ===== Style Contact ===== */
-.contact{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-image: url("../media/fond.jpg");
-}
-
-.contact>form{
-    margin: 1%;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-}
-
-.contact>article{
-   text-align: center;
-   padding-bottom: 15px;
-   background-color: rgba(255, 255, 255, 0.65);
-}
-
-.map {
-    width: 100%;
-    pointer-events: none;
-}
-
-form>ul>li {
-    margin: 10px;
-}
-
-input {
-    font-family: 'Roboto';
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid darkblue;
-    font-size: 20px;
-}
-
-input:focus,
-textarea:focus {
-    border: 3px solid #555;
-    outline: none;
-}
-
-textarea {
-    width: 100%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid darkblue;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-    font-size: 18px;
-}
-
-select {
-    width: 100%;
-    padding: 5px 10px;
-    border: 2px solid darkblue;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-    font-size: 18px;
-}
-
-input[type=submit] {
-    background-color: #e1e1e1;
-    border: none;
-    color: darkblue;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-label:not(.cbox) {
-    display: block;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-weight: normal;
-    pointer-events: none;
-    margin-left: 2px;
-    margin-bottom: 5px;
-}
-
-label {
-    color: #999;
-}
-
-input[type="checkbox"]{
-    width: auto;
-    margin-right: 5px;
-    margin-left: 3px;
-}
-
-article>ul>li{
-    font-size: 22px;
-    font-family: 'Roboto';
+    flex: 2;
 }
 
 /* ===== Style page Planetes ===== */
