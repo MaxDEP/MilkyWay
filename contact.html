@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MilkyWay | Contact</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/contact.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./media/rocket.png">
 </head>
 
@@ -39,34 +40,24 @@
         <section class="contact">
             <article>
                 <h2>Nous contactez</h2>
-                <ul>
-                    <li><strong>Par mail :</strong> contact.milkyway@milkyway.fr</li>
-                    <li><strong>Par Skype :</strong> milky.way</li>
-                    <li><strong>Par téléphone :</strong> 04 81 64 32 89</li>
-                </ul>
+                <address>
+                    <p><strong>Par mail :</strong> contact.milkyway@milkyway.fr</p>
+                    <p><strong>Par Skype :</strong> milky.way</li>
+                        <p><strong>Par téléphone :</strong> 04 81 64 32 89</p>
+                </address>
             </article>
-            <form method="get" action="send_msg.php">
+            <form method="get" action="send_msg.php" class="formulaire">
                 <h2>Envoyer un Message</h2>
-                <ul>
-                    <li>
-                        <label for="nom">Votre nom :</label>
-                        <input type="text" name="nom" id="nom" required>
-                    </li>
-                    <li>
-                        <label for="prénom">Votre prénom :</label>
-                        <input type="text" name="prénom" id="prénom" required>
-                    </li>
-                    <li>
-                        <label for="email">Votre email :</label>
-                        <input type="email" name="email" id="email" required>
-                    </li>
-                    <li>
-                        <label for="postal">Votre code postal :</label>
-                        <input type="number" name="postal" id="postal">
-                    </li>
-                    <li>
-                        <label for="pays">Votre pays :</label>
-                        <select name="pays" id="pays" required>
+                <label for="nom">Votre nom :</label>
+                <input type="text" name="nom" id="nom" pattern="^[a-zA-Z]{1,20}$" required>
+                <label for="prénom">Votre prénom :</label>
+                <input type="text" name="prénom" id="prénom" pattern="^[a-zA-Z]{1,20}$" required>
+                <label for="email">Votre email :</label>
+                <input type="email" name="email" id="email" required>
+                <label for="postal">Votre code postal :</label>
+                <input type="text" name="postal" id="postal" pattern="[0-9]{5}">
+                <label for="pays">Votre pays :</label>
+                <select name="pays" id="pays" required>
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
                             <option value="AL">Albania</option>
@@ -317,31 +308,23 @@
                             <option value="ZM">Zambia</option>
                             <option value="ZW">Zimbabwe</option>
                         </select>
-                    </li>
-                    <li>
-                        <label>Vous avez entendu parlé de nous via ?</label><br>
-                        <input type="checkbox" id="cbox1" name="source" value="google"><label for="cbox1" class="cbox">Google</label>
-                        <input type="checkbox" id="cbox2" name="source" value="facebook"><label for="cbox2" class="cbox">Facebook</label>
-                        <input type="checkbox" id="cbox3" name="source" value="amis"><label for="cbox3" class="cbox">Amis</label>
-                        <input type="checkbox" id="cbox4" name="source" value="télévision"><label for="cbox4" class="cbox">Télévision</label>
-                        <input type="checkbox" id="cbox5" name="source" value="autre"><label for="cbox5" class="cbox">Autre</label>
-                    </li>
-                    <li>
-                        <label for="date">Date à laquelle vous souhaitez être recontacté :</label><br>
-                        <input type="date" name="date" id="date" required>
-                    </li>
-                    <li>
-                        <label for="msg">Votre message :</label><br>
-                        <textarea rows="10" cols="50" name="msg" id="msg" required></textarea>
-                    </li><br>
-                    <input type="submit" value="Envoyer">
-                </ul>
+                <label>Vous avez entendu parlé de nous via ?</label><br>
+                <input type="checkbox" id="cbox1" name="source" value="google"><label for="cbox1" class="cbox">Google</label>
+                <input type="checkbox" id="cbox2" name="source" value="facebook"><label for="cbox2" class="cbox">Facebook</label>
+                <input type="checkbox" id="cbox3" name="source" value="amis"><label for="cbox3" class="cbox">Amis</label>
+                <input type="checkbox" id="cbox4" name="source" value="télévision"><label for="cbox4" class="cbox">Télévision</label>
+                <input type="checkbox" id="cbox5" name="source" value="autre"><label for="cbox5" class="cbox">Autre</label>
+                <label for="date">Date à laquelle vous souhaitez être recontacté :</label><br>
+                <input type="date" name="date" id="date" required>
+                <label for="msg">Votre message :</label><br>
+                <textarea rows="10" cols="50" name="msg" id="msg" placeholder="Posez nous toutes vos questions, nous y répondrons." required></textarea>
+                <input type="submit" value="Envoyer">
             </form>
         </section>
-        <section class="map">
+        <aside class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.573440341201!2d3.8508529157637486!3d43.636236361544974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6aec3fc4072d7%3A0x1a1585a408bcfed4!2sIUT+Montpellier!5e0!3m2!1sfr!2sfr!4v1480870298166"
                 width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </section>
+        </aside>
     </main>
     <footer>
         <blockquote>“La jeunesse veut l'espace, la vieillesse le temps. ”</blockquote>
@@ -353,9 +336,9 @@
             </ul>
         </section>
         <hr>
-        <p>© Copyright MilkyWay.</p>
+        <small>© Copyright MilkyWay.</small>
     </footer>
-    <script src="javascript/script.js" type="text/javascript"></script>
+    <script src="./javascript/script.js" type="text/javascript"></script>
 </body>
 
 </html>
