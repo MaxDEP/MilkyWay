@@ -346,7 +346,7 @@ div.equipe>div>ul.liste_social>li {
 }
 /*______________________________________________CSS page Presse______________________________________________*/
 
-.main_presse {
+#main_presse {
     background-color: whitesmoke;
     align-items: center;
     display: flex;
@@ -364,7 +364,7 @@ div.equipe>div>ul.liste_social>li {
     border-radius: 25px;
 }
 
-.main_presse>h1 {
+#main_presse>h1 {
     text-align: center;
     width: 95%;
     border: gray solid 2px;
