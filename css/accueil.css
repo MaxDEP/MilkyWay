@@ -73,3 +73,9 @@
 .services article:nth-child(3) {
     background-color: lightyellow;
 }
+
+@media only screen and (max-width: 760px) {
+    .services {
+        flex-direction: column;
+    }
+}
