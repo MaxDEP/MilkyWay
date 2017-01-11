@@ -353,14 +353,13 @@ main.main_presse {
     flex-direction: column;
 }
 
-div.presse {
+article.presse, address.presse {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin-top: 3%;
     margin-bottom: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 2%;
     background-color: rgba(0,0,0,0.2);
     border-radius: 25px;
 }
@@ -373,15 +372,8 @@ main.main_presse>h1 {
     background-color: white;
 }
 
-div.presse>h2 {
-    width: 65%;
-    margin-left: 15%;
+article.presse>h2, address.presse>h2 {
     color: black;
-}
-
-div.presse>p {
-    width: 65%;
-    margin-left: 15%;
 }
 
 /*______________________________________________CSS page FAQ______________________________________________*/
