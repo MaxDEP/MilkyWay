@@ -6,7 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-span {
+span, label {
     color: gray;
 }
 
@@ -23,8 +23,9 @@ input, textarea, select {
 }
 
 main {
+    display: flex;
     padding-top: 133px;
-    margin: auto;
+    margin: 0;
 }
 
 .liste_menu {
@@ -62,6 +63,11 @@ nav>ul>li>a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+}
+
+nav .fond img{
+    height: 80px;
+    width: auto;
 }
 
 nav>ul>li>a:hover {
@@ -116,200 +122,6 @@ footer small {
 
 .social>ul>li { /* Mauvais */
     margin: 10px;
-}
-
-
-/* ===== Style Accueil ===== */
-
-.fond {
-    background-image: url("../media/fond.jpg");
-    margin: 0;
-    height: 85px;
-    display: flex;
-    justify-content: center;
-}
-
-.background_accueil {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.background_accueil>video {
-    z-index: 0;
-    margin-top: -3.1em;
-}
-
-.background_accueil>.titre {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    width: 100%;
-    top: 38%;
-    visibility: hidden;
-    opacity: 0;
-    animation-duration: 3s;
-}
-
-.background_accueil>.titre>h1 {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.presentation {
-    display: flex;
-    width: 100%;
-    margin: 15px 0 15px 0;
-    align-items: center;
-}
-
-.img_explain_system {
-    margin-left: 5px;
-    max-width: 55%;
-    flex: 1;
-    border-radius: 65px;
-}
-
-.txt_explain_system {
-    margin-left: 2%;
-    margin-right: 5px;
-    flex: 2;
-}
-
-/* ===== Style page Planetes ===== */
-.galerie {
-    display: flex; 
-    margin-right: 2em;
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
-.galerie>.planetes{
-    width: 75%;
-    margin-right: 0.8em;
-    margin-left: 1em;
-    background-color: aliceblue;
-    border-radius: 1em;  
-    height: auto;
-}
-
-.galerie>aside{
-    width: 25%;
-    height: auto;
-}
-
-.box-img {
-    position: relative;
-}
-
-.box-img>img {
-  opacity: 1;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.looking {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.box-img:hover>img {
-  opacity: 0.5;
-  box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.5), 0 7px 40px 0 rgba(0, 0, 0, 0.3);
-}
-
-.box-img:hover .looking {
-  opacity: 1;
-}
-
-.looking>img { 
-  padding: 16px 32px;
-  max-width: 70px;
-  opacity: 0.9;
-}
-
-.galerie>.planetes>ul>li {
-    width: 25%;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-}
-
-.planetes>ul>li>p>strong{
-    padding-right: 5px;
-}
-
-.galerie>.planetes>ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-.popup-planetes {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.popup-contenu.planetes {
-    width: 75%;
-    height: 6em;
-    visibility: hidden;
-}
-
-.popup-contenu {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* ===== Style Animations et medias ===== */
@@ -409,6 +221,26 @@ footer small {
     }
 }
 
+@media screen and (max-width: 480px){
+    div.equipe {
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    div.equipe>div {
+        padding-left: 6%;
+    }
+
+    div.ligne_metier {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div.metier {
+        width: 75%;
+    }
+}
+
 @media screen and (max-height: 450px) {
     .nav_responsive {
         padding-top: 15px;
@@ -489,18 +321,6 @@ div.equipe>div>ul.liste_social>li {
     padding-left: 1%;
     padding-right: 1%;
 }
-
-@media (max-width: 480px) {
-    div.equipe {
-        flex-direction: column;
-        width: 80%;
-    }
-    
-    div.equipe>div {
-        padding-left: 6%;
-    }
-}
-
 /*______________________________________________CSS page Presse______________________________________________*/
 
 main.main_presse {
@@ -632,15 +452,4 @@ div.metier {
     margin-top: 4%;
     background-color: rgba(0,0,0,0.2);
     border-radius: 25px;
-}
-
-@media (max-width: 480px) {
-    div.ligne_metier {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    div.metier {
-        width: 75%;
-    }
 }
