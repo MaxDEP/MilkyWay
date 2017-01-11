@@ -57,6 +57,33 @@ nav {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.liste_menu .drop{
+    display: flex;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    background-color: rgba(120, 120, 120, 0.8);
+    min-width: 160px;
+    margin-top: 48px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop:hover .sub{
+    display: block;
+}
+
+.sub a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.sub a:hover {background-color: #f1f1f1}
+
 nav>ul>li>a {
     color: #f2f2f2;
     padding: 14px 16px;
