@@ -193,18 +193,18 @@ footer small {
     .icon_menu {
         display: inline;
     }
-    .galerie{
+    #planetes{
         flex-direction: column;
     }
-    .galerie>aside {
+    #planetes>aside {
         width: 100%;
         margin: 0;
     }
-    .galerie>.planetes {
+    #planetes>.galerie {
         width: 100%;
         margin: 0;
     }
-    .galerie>.planetes>ul>li {
+    #planetes>.galerie>ul>li {
         width: auto;
     }
     .nav_responsive {
