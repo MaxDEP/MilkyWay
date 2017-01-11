@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MilkyWay | Accueil</title>
     <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/accueil.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./media/rocket.png">
 </head>
 
@@ -35,23 +36,48 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </header>
-    <main>
+    <main id="accueil">
         <section class="background_accueil">
             <video width="100%" height="100%" id="video" autoplay>
-                <source src="media/galaxy.mp4" type="video/mp4">
+                <source src="./media/galaxy.mp4" type="video/mp4">
             </video>
-            <div class="titre" id="titre_accueil">
-                <h1>Bienvenue sur MilkyWay<br> <span>Achetez</span> et <span>personnaliser</span> vos planètes !</h1>
-            </div>
+            <h1 id="titre_accueil">Bienvenue sur MilkyWay<br> <span>Achetez</span> et <span>personnaliser</span> vos planètes !</h1>
         </section>
         <section class="presentation">
-            <img src="./media/saturne.jpg" alt="Image exemple custom planete" class="img_explain_system">
+            <img src="./media/saturne.jpg" alt="Image exemple custom planete">
             <article class="txt_explain_system">
                 <p>Notre société propose de nombreux services comme l'achat de planètes, dans la galaxie ou même dans l'univers
                     ! Ainsi que leurs personnalisations, changement de nom, de taille, rajout d'anneau de poussière, satellites...
                     Nous sommes les premiers à proposer ces services et à des prix très attractifs. <br></p>
                 <hr>
                 <p><strong>En ce moment : Une planète achetée = 1 satellite offert !</strong></p>
+            </article>
+        </section>
+        <section class="best">
+            <h2><em>Site web 100% responsive ! Certifié <strong>HTML5</strong> et CSS3</em></h2>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !">
+                </a>
+            </p>
+            <p>
+                <a href="https://validator.w3.org/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://gabrielbraun.free.fr/TechWeb/HTML/03_HTML5/Images/W3C_HTML5.png" alt="HTML5 Valide !">
+                </a>
+            </p>
+        </section>
+        <section class="services">
+            <article>
+                <h3>1. Achat de planètes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum tellus mi, sit amet viverra orci mollis sit amet. Etiam gravida odio at mollis finibus. Duis accumsan quam luctus erat blandit, eget egestas nisl commodo. Nullam ut vehicula dolor. In.</p>
+            </article>
+            <article>
+                <h3>2. Personnalisations</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in lorem id neque mattis scelerisque. Vestibulum nec mauris non turpis tincidunt maximus eget eu erat. Curabitur tortor turpis, vestibulum eu bibendum et, rutrum ut ipsum. Praesent sed massa vitae diam.</p>
+            </article>
+            <article>
+                <h3>3. Voyage</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique hendrerit dolor, nec egestas enim vehicula sit amet. Sed at libero quis lectus egestas molestie. Sed blandit, arcu et auctor venenatis, ex orci fringilla nunc.</p>
             </article>
         </section>
     </main>

@@ -65,6 +65,15 @@ nav>ul>li>a {
     font-size: 17px;
 }
 
+.fond {
+    background-image: url("../media/fond.jpg");
+    margin: 0;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+
 nav .fond img{
     height: 80px;
     width: auto;

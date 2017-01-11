@@ -1,0 +1,75 @@
+/* ===== Style Accueil ===== */
+#accueil {
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+#accueil .background_accueil {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background_accueil h1 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 38%;
+    visibility: hidden;
+    opacity: 0;
+    animation-duration: 3s;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#accueil .presentation {
+    display: flex;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    align-items: center;
+}
+
+.presentation > img {
+    margin-left: 5px;
+    max-width: 55%;
+    flex: 1;
+    border-radius: 65px;
+}
+
+.presentation > .txt_explain_system {
+    margin-left: 2%;
+    margin-right: 5px;
+    flex: 2;
+}
+
+.best {
+    background-color: rgba(210, 1, 1, 0.8);
+}
+
+.best p , h2{
+    width: 100%;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.services article {
+    padding: 1em;
+}
+
+.services article:nth-child(1) {
+    background-color: cadetblue;
+}
+.services article:nth-child(2) {
+    background-color: lightgreen;
+}
+.services article:nth-child(3) {
+    background-color: lightyellow;
+}
