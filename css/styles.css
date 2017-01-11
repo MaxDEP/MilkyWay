@@ -346,14 +346,14 @@ div.equipe>div>ul.liste_social>li {
 }
 /*______________________________________________CSS page Presse______________________________________________*/
 
-main.main_presse {
+.main_presse {
     background-color: whitesmoke;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-article.presse, address.presse {
+.presse {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -364,7 +364,7 @@ article.presse, address.presse {
     border-radius: 25px;
 }
 
-main.main_presse>h1 {
+.main_presse>h1 {
     text-align: center;
     width: 95%;
     border: gray solid 2px;
@@ -372,7 +372,7 @@ main.main_presse>h1 {
     background-color: white;
 }
 
-article.presse>h2, address.presse>h2 {
+.presse>h2 {
     color: black;
 }
 
